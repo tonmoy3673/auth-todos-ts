@@ -5,11 +5,13 @@ import Todos from "./components/pages/Todos";
 import About from "./components/pages/About";
 import Contact from "./components/pages/Contact";
 import Login from "./components/pages/Login";
+import './index.css';
 
 const root = document.getElementById("root") as HTMLElement;
 
 ReactDOM.createRoot(root).render(
-  <BrowserRouter>
+  <div className="max-w-screen-xl mx-auto">
+    <BrowserRouter>
     <Routes>
       <Route path="/" element={<RootLayout />}>
         <Route index element={<Todos />} />
@@ -19,4 +21,5 @@ ReactDOM.createRoot(root).render(
       </Route>
     </Routes>
   </BrowserRouter>
+  </div>
 );

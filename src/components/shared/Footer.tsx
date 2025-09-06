@@ -1,7 +1,7 @@
 
 const Footer = () => {
     return (
-        <div>
+        <div className="py-5 text-center font-semibold">
             Footer Page
         </div>
     );
